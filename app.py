@@ -15,6 +15,8 @@ def pencilsketch(inp_image):
     final_image = dodgeV2(image_gray, image_smoothing)
     return(final_image)
 st.set_page_config(page_title="Image to Pencil Sketch",page_icon="👋")
+image = Image.open('image.jpeg')
+st.image(image)
 st.title("Convert Image To Pencil Sketch")
 st.write("This Web App is to help convert your photos to realistic Pencil Sketches")
 file_image = st.sidebar.file_uploader("Upload your Photos", type=['jpeg','jpg','png'])
