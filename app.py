@@ -29,3 +29,8 @@ else:
     st.image(input_image, use_column_width=True)
     st.write("**Output Pencil Sketch**")
     st.image(final_sketch, use_column_width=True)
+st.title("Demo")
+video_file = open('vedio.webm', 'rb')
+video_bytes = video_file.read()
+
+st.video(video_bytes)
