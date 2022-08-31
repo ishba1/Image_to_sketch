@@ -5,8 +5,8 @@ import numpy as np
 from PIL import Image
 import cv2
 st.set_option('deprecation.showfileUploaderEncoding', False)
- st.title("Convert Image To Pencil Sketch")
-    st.set_page_config(page_title="Image to Pencil Sketch",page_icon="👋")
+st.title("Convert Image To Pencil Sketch")
+st.set_page_config(page_title="Image to Pencil Sketch",page_icon="👋")
 def dodgeV2(x, y):
     return cv2.divide(x, 255 - y, scale=256)
 #convert into sketch
