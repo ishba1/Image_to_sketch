@@ -23,7 +23,7 @@ file_image = st.sidebar.file_uploader("Upload your Photos", type=['jpeg','jpg','
 if file_image is None:
     st.write("You haven't uploaded any image file")
 else:
-    input_img = Image.open(file_image)
+    input_image = Image.open(file_image)
     final_sketch = pencilsketch(np.array(input_image))
     st.write("**Input Photo**")
     st.image(input_image, use_column_width=True)
