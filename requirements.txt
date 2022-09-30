@@ -3,3 +3,4 @@ numpy
 streamlit
 Pillow==9.0.1
 opencv-python-headless
+pip install -U opencv-python
